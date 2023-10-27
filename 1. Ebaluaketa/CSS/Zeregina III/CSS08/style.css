@@ -1,0 +1,18 @@
+.taula1{
+    font-family:'Courier New', Courier, monospace;
+    margin: 0 auto;
+    grid-gap: 1px;
+    grid-template-columns: repeat(3, 150px);
+    display: grid;
+    width: fit-content;
+} 
+
+.taula1 div{
+    background: #232527;
+    color: white;
+    padding: 18px;
+}
+
+.gelaxka1{
+    order: 2
+}

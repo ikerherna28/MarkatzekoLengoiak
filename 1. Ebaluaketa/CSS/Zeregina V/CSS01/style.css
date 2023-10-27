@@ -1,0 +1,25 @@
+ul.menua {
+    border: 1px solid #2c2c2c;
+    width: 180px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+ul.menua li {
+    border-bottom: 1px solid #2c2c2c;
+    border-top: 1px solid #FFF;
+    background: #F4F4F4;
+}
+
+ul.menua li a {
+    padding: .2em 0 .2em 1.5em;
+    display: block;
+    text-decoration: none;
+    color: #141414;
+    background: #F4F4F4 url("geziaTxuria.png") no-repeat 4px;
+}
+
+ul.menua li a:hover, ul.menua li a:active {
+    background: #E4E4E4 url("geziUrdina.png") no-repeat 4px;
+}

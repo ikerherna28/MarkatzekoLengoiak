@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem40</title>
+</head>
+
+<body>
+    <h1>Bisita-Liburua</h1>
+
+    <form action="prozesatu_bisita.php" method="POST">
+        <label for="izena">Izena:</label>
+        <input type="text" id="izena" name="izena" required><br><br>
+
+        <label for="emaila">E-maila:</label>
+        <input type="email" id="emaila" name="emaila" required><br><br>
+
+        <label for="herrialdea">Jatorrizko Herrialdea:</label>
+        <select id="herrialdea" name="herrialdea" required>
+            <option value="Hautatu Herrialdea">Hautatu Herrialdea</option>
+            <option value="Espainia">Espainia</option>
+            <option value="Frantzia">Frantzia</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Italia">Italia</option>
+            <option value="Andorra">Andorra</option>
+            <option value="Errumania">Errumania</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Estatu Batuak">Estatu Batuak</option>
+        </select><br><br>
+
+        <label for="balorazioa">Gunearen Balorazioa:</label>
+        <select id="balorazioa" name="balorazioa" required>
+            <option value="ona" selected>Ona</option>
+            <option value="erregularra">Erregularra</option>
+            <option value="txarra">Txarra</option>
+            <option value="oso ona">Oso Ona</option>
+            <option value="bikaina">Bikaina</option>
+        </select><br><br>
+
+        <label for="iruzkinak">Iruzkinak:</label><br>
+        <textarea id="iruzkinak" name="iruzkinak" rows="6" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Bidali Bisita">
+    </form>
+</body>
+
+</html>

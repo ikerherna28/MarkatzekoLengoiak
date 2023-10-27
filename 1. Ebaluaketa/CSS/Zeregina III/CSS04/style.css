@@ -1,0 +1,44 @@
+.taula1{
+    font-family:'Courier New', Courier, monospace;
+    justify-items: stretch;
+    display: grid;
+    grid-gap: 1px;
+    margin: 0 auto;
+    grid-template-columns: 100px repeat(4, 1fr);
+    grid-template-areas: 
+        'gohi-burua gohi-burua gohi-burua gohi-burua gohi-burua '
+        'ezkerrekoIzkina zutabe1 zutabe1 zutabe2 zutabe2 '
+        'ezkerrekoIzkina zutabe3 zutabe3 zutabe4 zutabe4 '; 
+    width: 500px;
+}
+
+.taula1 div{
+    background: #232527;
+    color: white;
+    padding: 18px;
+    text-align: center;
+}
+
+.gohi-burua{
+    grid-area: gohi-burua;
+}
+
+.ezkerrekoIzkina{
+    grid-area: ezkerrekoIzkina;
+}
+
+.zutabe1{
+    grid-area: zutabe1;
+}
+
+.zutabe2{
+    grid-area: zutabe2;
+}
+
+.zutabe3{
+    grid-area: zutabe3;
+}
+
+.zutabe4{
+    grid-area: zutabe4;
+}

@@ -1,0 +1,29 @@
+.taula1{
+    font-family:'Courier New', Courier, monospace;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template: 
+        'gelaxka1 gelaxka1 gelaxka2 gelaxka2'
+        'gelaxka3 gelaxka4 gelaxka4 gelaxka4'
+        'gelaxka5 gelaxka5 gelaxka5 gelaxka5';
+    margin: 0 auto;
+    width: 500px;
+} 
+
+.taula1 div{
+    background: #232527;
+    color: white;
+    padding: 18px;
+    text-align: center;   
+}
+
+.gelaxka1{ grid-area: gelaxka1}
+
+.gelaxka2{ grid-area: gelaxka2}
+
+.gelaxka3{ grid-area: gelaxka3}
+
+.gelaxka4{ grid-area: gelaxka4}
+
+.gelaxka5{ grid-area: gelaxka5}

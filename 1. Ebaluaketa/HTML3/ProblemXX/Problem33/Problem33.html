@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem33</title>
+</head>
+
+<body>
+    <h1>Aukeratu E-mail bat:</h1>
+
+    <form action="prozesatu.php" method="POST">
+        <label for="correos">Aukeratu mezu elektroniko bat edo batzuk:</label><br>
+        <select id="correos" name="correos[]" multiple="multiple" required>
+            <option value="email1">raulalvarez@yahoo.com</option>
+            <option value="email2">romafernandez@gmail.com</option>
+            <option value="email3">ioanadelasheras@tolosaldealh.eus</option>
+            <option value="email4">carlossainz@ferrari.com</option>
+            <option value="email5">anderruizarias@euskojaurlaritza.eus</option>
+            <option value="email6">lancestroll@gmail.com</option>
+            <option value="email7">fernandoalonso@astonmartin.com</option>
+        </select><br><br>
+
+        <input type="submit" value="Bidali">
+    </form>
+</body>
+
+</html>

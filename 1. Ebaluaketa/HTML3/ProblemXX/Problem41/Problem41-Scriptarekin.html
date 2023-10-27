@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem41-Script</title>
+</head>
+
+<body>
+    <h1>Matrizea</h1>
+
+    <table>
+        <tr>
+            <td><input type="text" id="matrizea_00" name="matrizea[0][0]"></td>
+            <td><input type="text" id="matrizea_01" name="matrizea[0][1]"></td>
+            <td><input type="text" id="matrizea_02" name="matrizea[0][2]"></td>
+            <td><input type="text" id="matrizea_03" name="matrizea[0][3]"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="matrizea_10" name="matrizea[1][0]"></td>
+            <td><input type="text" id="matrizea_11" name="matrizea[1][1]"></td>
+            <td><input type="text" id="matrizea_12" name="matrizea[1][2]"></td>
+            <td><input type="text" id="matrizea_13" name="matrizea[1][3]"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="matrizea_20" name="matrizea[2][0]"></td>
+            <td><input type="text" id="matrizea_21" name="matrizea[2][1]"></td>
+            <td><input type="text" id="matrizea_22" name="matrizea[2][2]"></td>
+            <td><input type="text" id="matrizea_23" name="matrizea[2][3]"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="matrizea_30" name="matrizea[3][0]"></td>
+            <td><input type="text" id="matrizea_31" name="matrizea[3][1]"></td>
+            <td><input type="text" id="matrizea_32" name="matrizea[3][2]"></td>
+            <td><input type="text" id="matrizea_33" name="matrizea[3][3]"></td>
+        </tr>
+    </table>
+
+    <button onclick="kargatuPerimetroa()">Kargatu Perimetroa</button>
+    <button onclick="lauElementuNagusia()">Lau Elementu Nagusia</button>
+
+    <script>
+        function kargatuPerimetroa() {
+            var matrizea = [];
+            for (var i = 0; i < 4; i++) {
+                matrizea[i] = [];
+                for (var j = 0; j < 4; j++) {
+                    var inputId = "matrizea_" + i + j;
+                    var inputValue = document.getElementById(inputId).value;
+                    matrizea[i][j] = inputValue;
+                }
+            }
+
+            var perimetroa = [];
+            
+            // Goiko ertzean
+            for (var i = 0; i < 4; i++) {
+                perimetroa.push(matrizea[0][i]);
+            }
+            
+            // Esku aldean (ezkerra behean)
+            for (var i = 1; i < 4; i++) {
+                perimetroa.push(matrizea[i][3]);
+            }
+            
+            // Behe aldean
+            for (var i = 2; i >= 0; i--) {
+                perimetroa.push(matrizea[3][i]);
+            }
+            
+            // Ezker aldean (ezkerra goian)
+            for (var i = 2; i >= 1; i--) {
+                perimetroa.push(matrizea[i][0]);
+            }
+
+            alert("Perimetroa: " + perimetroa.join(", "));
+        }
+
+        function lauElementuNagusia() {
+            var matrizea = [];
+            for (var i = 0; i < 4; i++) {
+                matrizea[i] = [];
+                for (var j = 0; j < 4; j++) {
+                    var inputId = "matrizea_" + i + j;
+                    var inputValue = document.getElementById(inputId).value;
+                    matrizea[i][j] = inputValue;
+                }
+            }
+
+            // Lau elementu nagusiak (goiko ezkerraldian)
+            var lauElementuak = [
+                matrizea[0][0],
+                matrizea[0][1],
+                matrizea[1][0],
+                matrizea[1][1]
+            ];
+
+            alert("Lau Elementu Nagusia: " + lauElementuak.join(", "));
+        }
+    </script>
+</body>
+
+</html>
+
+Interneteko tutorial baten laguntzarekin egina, 
+"Problem41" bi ariketa egin ditut, bat Scriptarekin eta bestea Script gabe! 
+Scriptarekin eskatzen du baina ez dakit egin behar den.

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem37</title>
+</head>
+
+<body>
+    <h1>Fitxategi Bidalketa</h1>
+    <p>Beharrezko fitatxeak atzitu</p>
+
+    <form action="fitxategiak.php" method="POST" enctype="multipart/form-data">
+        <label for="fitxategi1">Fitxategia 1:</label>
+        <input type="file" id="fitxategi1" name="fitxategi1" accept=".pdf, .doc, .docx" required><br><br>
+
+        <label for="fitxategi2">Fitxategia 2:</label>
+        <input type="file" id="fitxategi2" name="fitxategi2" accept=".pdf, .doc, .docx" required><br><br>
+
+        <input type="submit" value="Bidali Fitxategiak">
+    </form>
+
+</body>
+</html>

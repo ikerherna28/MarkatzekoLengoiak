@@ -1,0 +1,23 @@
+.taula1{
+    font-family:'Courier New', Courier, monospace;
+    margin: 0 auto;
+    display: grid;
+    width: fit-content; 
+    grid-gap: 1px;
+    grid-template-columns: 100px repeat(2,150px);
+} 
+
+.taula1 div{
+    background: #232527;
+    color: white;
+    padding: 18px;
+    text-align: center;
+}
+
+.ezkerrekoIzkina{
+    grid-row: 2/ span 3
+}
+
+.gohi-burua{
+    grid-column: 1/4;
+}

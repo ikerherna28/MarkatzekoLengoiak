@@ -1,0 +1,48 @@
+.taula1{
+    font-family:'Courier New', Courier, monospace;
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 1px;
+    grid-template: 
+        'gelaxka1 gelaxka1 gelaxka2 gelaxka2'
+        'gelaxka3 gelaxka3 gelaxka4 gelaxka4'
+        'gelaxka5 gelaxka5 gelaxka4 gelaxka4';
+    margin: 0 auto;
+} 
+
+.taula1 >div{
+    background: #232527;
+    color: white;
+    padding: 18px;
+    text-align: center;   
+}
+
+.gelaxka1{ grid-area: gelaxka1}
+
+.gelaxka2{ grid-area: gelaxka2}
+
+.gelaxka3{ grid-area: gelaxka3}
+
+.gelaxka4{ grid-area: gelaxka4}
+
+.gelaxka5{ grid-area: gelaxka5}
+
+.zerrenda{
+    background: white;
+    grid-gap: 1px;
+    display:grid;
+    grid-template: ' a a ' auto
+}
+
+.puntua1{
+    grid-area: a
+}
+.zerrenda div{
+    background:#e176eb;
+    padding: 18px;
+    color: black;
+}
+
+
+

@@ -1,0 +1,14 @@
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50em;
+}
+
+.galeria img {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: .5em;
+    border: 1px solid #000000;
+}

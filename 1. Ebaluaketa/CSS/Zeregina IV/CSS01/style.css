@@ -1,0 +1,17 @@
+a {
+    color: #CC0000;
+    padding: 2px;
+    margin: 1em 0;
+    float: left;
+    clear: left;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #CC0000;
+    color: #FFF;
+}
+
+a:visited {
+    color: #CCC;
+}

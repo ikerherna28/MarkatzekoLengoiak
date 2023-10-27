@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem45</title>
+</head>
+
+<body>
+    <h1>Pizza Eskatzeko Formularioa</h1>
+
+    <form action="mailto:pizzasya@gmail.com" method="post" enctype="text/plain">
+        <label for="izena">Izena:</label>
+        <input type="text" id="izena" name="izena" required>
+        <br><br>
+
+        <label for="telefonoa">Telefonoa:</label>
+        <input type="tel" id="telefonoa" name="telefonoa" required>
+        <br><br>
+
+        <label for="tamaina">Pizzaren Tamaina:</label>
+        <select id="tamaina" name="tamaina">
+            <option value="txikia">Txikia</option>
+            <option value="erdikoa">Erdikoa</option>
+            <option value="handia">Handia</option>
+        </select>
+        <br><br>
+
+        <label>Ingredientuak:</label><br>
+            <input type="checkbox" id="tomatea" name="ingredientuak[]" value="Tomatea">
+            <label for="tomatea">Tomatea</label>
+            <input type="checkbox" id="salamia" name="ingredientuak[]" value="Salamia">
+            <label for="salamia">Salamia</label>
+            <input type="checkbox" id="formatua" name="ingredientuak[]" value="Formatua">
+            <label for="formatua">Perretsikuak</label>
+            <input type="checkbox" id="txanpinoiak" name="ingredientuak[]" value="Txanpinoiak">
+            <label for="tomatea">Txanpinoiak</label>
+            <input type="checkbox" id="anana" name="ingredientuak[]" value="Anana">
+            <label for="tomatea">Anana</label>
+            <input type="checkbox" id="gazta" name="ingredientuak[]" value="Gazta">
+            <label for="tomatea">Gazta</label>
+            <input type="checkbox" id="mozzarella" name="ingredientuak[]" value="Mozzarella">
+            <label for="tomatea">Mozzarella</label>
+            <input type="checkbox" id="piperrak" name="ingredientuak[]" value="Piperrak">
+            <label for="tomatea">Piperrak</label>
+            <input type="checkbox" id="antxoak" name="ingredientuak[]" value="Antxoak">
+            <label for="tomatea">Antxoak</label><br>
+
+        <label for="jarraibideak">Jarraibide bereziak:</label>
+        <textarea id="jarraibideak" name="jarraibideak" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Bidali eskaera">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem30</title>
+</head>
+<body>
+    <h1>Filmak Aukeratu</h1>
+
+    <form action="prozesatu.php" method="POST">
+        <label for="email">E-maila:</label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="gakoa1">Pasahitza:</label>
+        <input type="password" id="gakoa1" name="gakoa1" required><br><br>
+
+        <p>Aukeratu filmak:</p>
+        <input type="checkbox" id="filma1" name="filmak[]" value="Filma 1">
+        <label for="filma1"> AMAMA</label><br>
+
+        <input type="checkbox" id="filma2" name="filmak[]" value="Filma 2">
+        <label for="filma2"> IRATI</label><br>
+
+        <input type="checkbox" id="filma3" name="filmak[]" value="Filma 3">
+        <label for="filma3"> AUPA ETXEBESTE!</label><br>
+
+        <input type="checkbox" id="filma4" name="filmak[]" value="Filma 4">
+        <label for="filma4"> 80 EGUNEAN</label><br><br>
+
+        <input type="submit" value="Bidali">
+    </form>
+</body>
+
+</html>

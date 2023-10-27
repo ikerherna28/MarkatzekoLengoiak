@@ -1,0 +1,15 @@
+.taula1{
+    font-family:'Courier New', Courier, monospace;
+    display: grid;
+    margin: 0 auto;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column dense;
+    grid-gap: 1px;
+    width: 300px;
+}
+
+.taula1 div{
+    background: #232527;
+    color: white;
+    padding: 18px;
+}

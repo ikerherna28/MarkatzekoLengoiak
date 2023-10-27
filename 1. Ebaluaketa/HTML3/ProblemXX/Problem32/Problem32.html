@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem32</title>
+</head>
+
+<body>
+    <h1>Bisitariaren iritzia</h1>
+
+    <form action="prozesatu.php" method="POST">
+        <label for="izena">Izena:</label>
+        <input type="text" id="izena" name="izena" required><br><br>
+
+        <label for="gunea">Gunea baloratu:</label>
+        <select id="gunea" name="gunea" required>
+            <option value="Bikaina">Bikaina</option>
+            <option value="Oso Ona">Oso Ona</option>
+            <option value="Ona">Ona</option>
+            <option value="Hala-holakoa">Hala-holakoa</option>
+            <option value="Txarra">Txarra</option>
+        </select><br><br>
+
+        <input type="submit" value="Bidali">
+    </form>
+</body>
+
+</html>
