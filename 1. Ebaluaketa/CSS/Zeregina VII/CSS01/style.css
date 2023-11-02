@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #F2F5FE url("../imagenes/fondo.gif") 0 0 repeat-x;
+    background: #F2F5FE url("imagenes/fondo.gif") 0 0 repeat-x;
     font: 70%/160% "verdana", sans-serif;
     color: #192666;
 }
